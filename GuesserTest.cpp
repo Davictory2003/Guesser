@@ -181,7 +181,7 @@ TEST(GuesserTest, spaces_in_secret)
 	ASSERT_TRUE(g.match("hello world"));
 }
 
-TEST(GuesserTest, spaces_mismatch)
+TEST(GuesserTest, space_mismatch)
 {
 	Guesser g("hello world");
 	ASSERT_FALSE(g.match("helloworld"));
